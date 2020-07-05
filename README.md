@@ -12,3 +12,11 @@ Files and study material for the Arup IoT Workshop 2020
 * Restart the Arduino GUI
 * Go to Tools > Board > Boards Manager
 * Search for ESP32 and press install button for the “ESP32 by Espressif Systems“
+
+# Google Cloud Platform (GCP) setup
+
+* [Install Google Cloud SDK](https://cloud.google.com/sdk/install)
+* If you already have the GCP SDK installed, update it with `gcloud components update`
+* `gcloud auth login` to authenticate the GCP command line interface
+* `gcloud projects list` to check that the `iot-workshop-2020` is listed
+* `gcloud config set project iot-workshop-2020`
