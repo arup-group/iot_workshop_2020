@@ -1,6 +1,10 @@
 # iot_workshop_2020
 Files and study material for the Arup IoT Workshop 2020
 
+# ESP32 Controller
+
+![ESP32](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/_images/esp32-devkitc-functional-overview.jpg)
+
 # ESP32 software installation
 
 [Instructions and video walkthrough](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
