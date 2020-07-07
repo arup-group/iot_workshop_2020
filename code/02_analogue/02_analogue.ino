@@ -4,7 +4,7 @@
  * 
  */
 
-int analoguePin = 4;
+int analoguePin = 2;
 int delayInterval = 1000;
 
 void setup() 
