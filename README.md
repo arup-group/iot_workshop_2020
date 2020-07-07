@@ -24,3 +24,13 @@ Files and study material for the Arup IoT Workshop 2020
 * `gcloud auth login` to authenticate the GCP command line interface
 * `gcloud projects list` to check that the `iot-workshop-2020` is listed
 * `gcloud config set project iot-workshop-2020`
+* ...
+
+# Data communication stack
+
+* [BDNS](https://github.com/theodi/BDNS)
+* [DB ontology](https://github.com/google/digitalbuildings/tree/master/ontology)
+* [UDMI](https://github.com/faucetsdn/daq/tree/master/schemas/udmi)
+* [JSON](https://www.json.org/json-en.html)
+* [MQTT](http://mqtt.org/)
+
