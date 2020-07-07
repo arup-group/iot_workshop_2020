@@ -4,15 +4,18 @@ Files and study material for the Arup IoT Workshop 2020
 # ESP32 Controller
 
 ![ESP32](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/_images/esp32-devkitc-functional-overview.jpg)
+
 ![ESP32 board](https://github.com/Nicholas3388/LuaNode/raw/master/images/ESP32_dimension.png)
+
+![ESP32 Pinout](https://i2.wp.com/randomnerdtutorials.com/wp-content/uploads/2018/08/ESP32-DOIT-DEVKIT-V1-Board-Pinout-36-GPIOs-updated.jpg?ssl=1)
 
 # ESP32 software installation
 
-* [Instructions and video walkthrough](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
+[Instructions and video walkthrough](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
 
-* [GitHub ESP32 software page](https://github.com/espressif/arduino-esp32)
+[GitHub ESP32 software page](https://github.com/espressif/arduino-esp32)
 
-* [ESP32 tools and documentation](https://www.espressif.com/en/products/socs/esp32/resources)
+[ESP32 tools and documentation](https://www.espressif.com/en/products/socs/esp32/resources)
 
 * Install the [Arduino GUI](https://www.arduino.cc/en/Main/Software)
 * Enter [https://dl.espressif.com/dl/package_esp32_index.json](https://dl.espressif.com/dl/package_esp32_index.json) into the “Additional Board Manager URLs” field in File > Preferences on the Arduino GUI . Then, click the “OK” button
