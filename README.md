@@ -8,10 +8,11 @@ Files and study material for the Arup IoT Workshop 2020
 
 # ESP32 software installation
 
-[Instructions and video walkthrough](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
+* [Instructions and video walkthrough](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/)
 
-[GitHub ESP32 software page](https://github.com/espressif/arduino-esp32)
-[ESP32 tools and documentation](https://www.espressif.com/en/products/socs/esp32/resources)
+* [GitHub ESP32 software page](https://github.com/espressif/arduino-esp32)
+
+* [ESP32 tools and documentation](https://www.espressif.com/en/products/socs/esp32/resources)
 
 * Install the [Arduino GUI](https://www.arduino.cc/en/Main/Software)
 * Enter [https://dl.espressif.com/dl/package_esp32_index.json](https://dl.espressif.com/dl/package_esp32_index.json) into the “Additional Board Manager URLs” field in File > Preferences on the Arduino GUI . Then, click the “OK” button
