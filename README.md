@@ -1,5 +1,8 @@
 # iot_workshop_2020
+
 Files and study material for the Arup IoT Workshop 2020
+
+[Slides](https://docs.google.com/presentation/d/1V-FpWEgVG5IYAx1H07vVJmNFeQp_SIVyyOpq0P_QqHQ/edit#slide=id.g877fa63a13_3_504) for the workshop.
 
 # ESP32 Controller
 
