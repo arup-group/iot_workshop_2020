@@ -40,6 +40,7 @@ Files and study material for the Arup IoT Workshop 2020
 * Optional: if using Windows install the new [Windows Terminal](https://www.microsoft.com/en-gb/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) application
 * If you already have the GCP SDK installed, update it with `gcloud components update`
 * `gcloud auth login` to authenticate the GCP command line interface
+* Check that you can access the [GCP project console](https://console.cloud.google.com/home/dashboard?authuser=1&project=iot-workshop-2020)
 
 ## Steps done before the workshop 
 
