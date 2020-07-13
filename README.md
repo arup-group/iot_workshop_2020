@@ -113,6 +113,9 @@ They are listed for reference in case you need to create a new project.
 
 ### Push the example code to the ESP32
 
+* Install these two libraries in the Arduino software
+  * [arduino-mqtt](https://github.com/256dpi/arduino-mqtt)
+  * [google-cloud-iot-arduino](https://github.com/GoogleCloudPlatform/google-cloud-iot-arduino)
 * [code/04_esp32_to_giotcloud](code/04_esp32_to_giotcloud)
 
 # Data communication stack
