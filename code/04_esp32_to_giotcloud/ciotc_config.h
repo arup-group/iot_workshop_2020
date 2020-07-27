@@ -5,14 +5,14 @@
 // in https://www.hackster.io/arichetta/add-ssl-certificates-to-mkr1000-93c89d
 
 // Wifi network details.
-const char *ssid = "ssid";
-const char *password = "password";
+const char *ssid = "bozzograo";
+const char *password = "E398f98c22";
 
 // Cloud IoT details.
 const char *project_id = "iot-workshop-2020";
 const char *location = "europe-west1";
 const char *registry_id = "iot-workshop-2020-registry";
-const char *device_id = "yourname-esp32";
+const char *device_id = "francesco-esp32";
 
 // Configuration for NTP
 const char* ntp_primary = "pool.ntp.org";
@@ -27,9 +27,9 @@ const char* ntp_secondary = "time.nist.gov";
 // it's smaller add "00:" to the start. If it's too big or too small something
 // is probably wrong with your key.
 const char* private_key_str =
-    "##:##:##:##:##:##:##:##:##:##:##:##:##:##:##:"
-    "##:##:##:##:##:##:##:##:##:##:##:##:##:##:##:"
-    "##:##";
+    "35:da:f1:6b:e5:c4:ec:fb:5f:0a:35:99:a0:61:e5:"
+    "34:45:46:2c:16:2e:19:49:ed:0a:50:8e:cb:3c:1d:"
+    "03:f2";
 
 // Time (seconds) to expire token += 20 minutes for drift
 const int jwt_exp_secs = 3600; // Maximum 24H (3600*24)

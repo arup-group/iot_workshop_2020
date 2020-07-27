@@ -123,7 +123,7 @@ They are listed for reference in case you need to create a new project.
 
 * [BDNS](https://github.com/theodi/BDNS)
 * [DB ontology](https://github.com/google/digitalbuildings/tree/master/ontology)
-* [UDMI](https://github.com/faucetsdn/daq/tree/master/schemas/udmi)
+* [UDMI](https://github.com/faucetsdn/udmi)
 * [JSON](https://www.json.org/json-en.html)
 * [JWT - JSON Web Tokens](https://jwt.io/)
 * [MQTT](http://mqtt.org/)
