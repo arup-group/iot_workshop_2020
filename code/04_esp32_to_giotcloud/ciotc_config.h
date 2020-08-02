@@ -5,14 +5,14 @@
 // in https://www.hackster.io/arichetta/add-ssl-certificates-to-mkr1000-93c89d
 
 // Wifi network details.
-const char *ssid = "bozzograo";
-const char *password = "E398f98c22";
+const char *ssid = "ssid";
+const char *password = "password";
 
 // Cloud IoT details.
 const char *project_id = "iot-workshop-2020";
 const char *location = "europe-west1";
 const char *registry_id = "iot-workshop-2020-registry";
-const char *device_id = "LPS-28";
+const char *device_id = "LPS-##";
 
 // Configuration for NTP
 const char* ntp_primary = "pool.ntp.org";
