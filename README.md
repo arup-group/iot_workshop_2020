@@ -47,6 +47,13 @@ Files and study material for the Arup IoT Workshop 2020
 Don't do these steps as they have been done already.
 They are listed for reference in case you need to create a new project.
 
+For this workshop the following variables are used:
+
+* PROJECT_ID = iot-workshop-2020
+* REGISTRY_NAME = iot-workshop-2020-registry
+* PUBSUB_TOPIC = iot-workshop-topic
+* PUBSUB_SUBSCRIPTION = iot-workshop-subscription
+
 * Create a new project `gcloud projects create PROJECT_ID`
 
 * Set default project `gcloud config set project PROJECT_ID`
@@ -75,7 +82,10 @@ They are listed for reference in case you need to create a new project.
     openssl ecparam -genkey -name prime256v1 -noout -out iot_private.pem
     openssl ec -in iot_private.pem -pubout -out iot_public.pem
     ```
-
+* `gcloud pubsub topics create PUBSUB_TOPIC` 
+* `gcloud pubsub subscriptions create PUBSUB_SUBSCRIPTION --topic PUBSUB_TOPIC`
+  
+  
 ## Steps for the workshop 
 
 ### Set the active project
@@ -83,9 +93,8 @@ They are listed for reference in case you need to create a new project.
 * `gcloud projects list` to check that the `iot-workshop-2020` is listed
 * `gcloud config set project iot-workshop-2020`
 
-### Create the IoT core topic, subscription and device
-* `gcloud pubsub topics create yourname-esp32` changing `yourname` with your name
-* `gcloud pubsub subscriptions create yourname-esp32-subscription --topic yourname-esp32` changing `yourname` with your name
+### Create the IoT core device
+
 * Create a new Cloud IoT device
     ```
     gcloud iot devices create yourname-esp32 \

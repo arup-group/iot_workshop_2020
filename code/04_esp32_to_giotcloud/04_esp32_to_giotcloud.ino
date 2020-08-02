@@ -1,19 +1,22 @@
 /*
- * 
- * Arup IoT Workshop
- * 
- */
+
+   Arup IoT Workshop
+
+*/
 
 #include "universal-mqtt.h"
+#include <TimeLib.h>
 
 #define PUBLISH_DELAY 10000
 
 int analoguePin = 32;
 unsigned long lastMillis = 0;
+const int led = 23;
 
 void setup() {
   Serial.begin(115200);
   setupCloudIoT();
+  digitalWrite(led, 1);
 }
 
 void loop() {
@@ -26,15 +29,36 @@ void loop() {
 
   // publish a message roughly every PUBLISH_DELAY ms.
   if (millis() - lastMillis > PUBLISH_DELAY) {
+    digitalWrite(led, 1);
     lastMillis = millis();
 
     int reading  = analogRead(analoguePin);
-    Serial.println(reading);
+    char ts[26];
+    int t = time(nullptr);
+    sprintf(ts, "%4d-%02d-%02dT%02d:%02d:%02d.000Z", 
+            year(t), 
+            month(t), 
+            day(t), 
+            hour(t),
+            minute(t), 
+            second(t));
 
-    String payload = String("{\"timestamp\":") + time(nullptr) +
-                     String(",\"reading\":") + reading +
-                     String("}");
+//    Serial.println(reading);
+
+    //    String payload = String("{\"timestamp\":") + time(nullptr) +
+    //                     String(",\"reading\":") + reading +
+    //                     String("}");
+
+    // UDMI format example
+    // {"version":1,"timestamp":"2019-01-17T14:02:29.364Z","points":{"illuminance_sensor":{"present_value":1023}}}'
+    String payload = String("{\"version\":") + 1 +
+                     String(",\"timestamp\":\"") + ts +
+                     String("\",\"points\":{\"illuminance_sensor\":{\"present_value\":") + reading +
+                     String("}}}");
+                     
+    Serial.println(payload);
     publishTelemetry(payload);
+    digitalWrite(led, 0);
   }
 }
 

@@ -12,7 +12,7 @@ const char *password = "E398f98c22";
 const char *project_id = "iot-workshop-2020";
 const char *location = "europe-west1";
 const char *registry_id = "iot-workshop-2020-registry";
-const char *device_id = "francesco-esp32";
+const char *device_id = "LPS-28";
 
 // Configuration for NTP
 const char* ntp_primary = "pool.ntp.org";
