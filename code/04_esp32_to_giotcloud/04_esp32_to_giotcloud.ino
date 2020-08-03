@@ -11,9 +11,10 @@
 
 int analoguePin = 32;
 unsigned long lastMillis = 0;
-const int led = 23;
+const int led = 33;
 
 void setup() {
+  pinMode (led, OUTPUT);
   Serial.begin(115200);
   setupCloudIoT();
   digitalWrite(led, 1);
@@ -42,12 +43,6 @@ void loop() {
             hour(t),
             minute(t), 
             second(t));
-
-//    Serial.println(reading);
-
-    //    String payload = String("{\"timestamp\":") + time(nullptr) +
-    //                     String(",\"reading\":") + reading +
-    //                     String("}");
 
     // UDMI format example
     // {"version":1,"timestamp":"2019-01-17T14:02:29.364Z","points":{"illuminance_sensor":{"present_value":1023}}}'
