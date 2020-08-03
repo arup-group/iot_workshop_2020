@@ -85,7 +85,7 @@ For this workshop the following variables are used:
 * `gcloud pubsub topics create PUBSUB_TOPIC` 
 * `gcloud pubsub subscriptions create PUBSUB_SUBSCRIPTION --topic PUBSUB_TOPIC`
   
-  
+
 ## Steps for the workshop 
 
 ### Set the active project
@@ -97,13 +97,13 @@ For this workshop the following variables are used:
 
 * Create a new Cloud IoT device
     ```
-    gcloud iot devices create yourname-esp32 \
+    gcloud iot devices create LPS=## \
     --region=europe-west1 \
     --registry=iot-workshop-2020-registry \
     --public-key="path=./iot_public.pem,type=es256"
     ```
-    changing `yourname` with your name
-* `openssl ec -in iot_private.pem -noout -text`
+    changing `##` with a number from the list in the spreadsheet
+*   `openssl ec -in iot_private.pem -noout -text`
     ```
     read EC key
     Private-Key: (256 bit)
@@ -123,10 +123,12 @@ For this workshop the following variables are used:
 
 ### Push the example code to the ESP32
 
-* Install these two libraries in the Arduino software
+* Install these three libraries in the Arduino software
   * [arduino-mqtt](https://github.com/256dpi/arduino-mqtt)
   * [google-cloud-iot-arduino](https://github.com/GoogleCloudPlatform/google-cloud-iot-arduino)
+  * [Arduino Time library](https://github.com/PaulStoffregen/Time)
 * [code/04_esp32_to_giotcloud](code/04_esp32_to_giotcloud)
+* Add the private key to the `ciotc_config.h` file in the `code/04_esp32_to_giotcloud` and change the other variables to point to the project, location, registry, device and local WiFi settings
 
 # Data communication stack
 
@@ -137,3 +139,6 @@ For this workshop the following variables are used:
 * [JWT - JSON Web Tokens](https://jwt.io/)
 * [MQTT](http://mqtt.org/)
 
+# Data pipeline
+
+TBC
