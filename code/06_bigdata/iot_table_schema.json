@@ -1,0 +1,20 @@
+[
+ {
+ "description": "device_id",
+ "name": "device_id",
+ "type": "STRING",
+ "mode": "NULLABLE"
+ },
+ {
+ "description": "timestamp",
+ "name": "timestamp",
+ "type": "STRING",
+ "mode": "NULLABLE"
+ },
+ {
+ "description": "illuminance",
+ "name": "illuminance",
+ "type": "STRING",
+ "mode": "NULLABLE"
+ }
+]
