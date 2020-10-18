@@ -97,7 +97,7 @@ For this workshop the following variables are used:
 
 * Create a new Cloud IoT device
     ```
-    gcloud iot devices create LPS=## \
+    gcloud iot devices create LPS-## \
     --region=europe-west1 \
     --registry=iot-workshop-2020-registry \
     --public-key="path=./iot_public.pem,type=es256"
