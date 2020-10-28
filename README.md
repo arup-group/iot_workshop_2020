@@ -10,7 +10,7 @@ Files and study material for the Arup IoT Workshop 2020
 
 ![ESP32 board](https://github.com/Nicholas3388/LuaNode/raw/master/images/ESP32_dimension.png)
 
-![ESP32 Pinout](https://i2.wp.com/randomnerdtutorials.com/wp-content/uploads/2018/08/ESP32-DOIT-DEVKIT-V1-Board-Pinout-36-GPIOs-updated.jpg?ssl=1)
+![ESP32 Pinout](https://microcontrollerslab.com/wp-content/uploads/2019/02/ESP32-pinout-mapping.png)
 
 # ESP32 software installation
 
