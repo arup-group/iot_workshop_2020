@@ -4,8 +4,8 @@
  * 
  */
 
-const int ledPin = 33;
-const int delayInterval = 2000;
+const int ledPin = 5;
+const int delayInterval = 3000;
 
 void setup() {
   pinMode (ledPin, OUTPUT);
