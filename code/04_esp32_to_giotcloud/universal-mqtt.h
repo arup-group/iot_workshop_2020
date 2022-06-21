@@ -92,6 +92,7 @@ void setupCloudIoT() {
 
   setupWifi();
   netClient = new WiFiSSLClient();
+  netClient->setCACert(root_cert);
 
   mqttClient = new MQTTClient(512);
   mqttClient->setOptions(180, true, 1000); // keepAlive, cleanSession, timeout
@@ -113,7 +114,7 @@ void setupCloudIoT() {
 #include "ciotc_config.h" // Update this file with your configuration
 
 // Initialize WiFi and MQTT for this board
-Client *netClient;
+WiFiClientSecure *netClient;
 CloudIoTCoreDevice *device;
 CloudIoTCoreMqtt *mqtt;
 MQTTClient *mqttClient;
@@ -183,6 +184,7 @@ void setupCloudIoT() {
 
   setupWifi();
   netClient = new WiFiClientSecure();
+  netClient->setCACert(root_cert);
   mqttClient = new MQTTClient(512);
   mqttClient->setOptions(180, true, 1000); // keepAlive, cleanSession, timeout
   mqtt = new CloudIoTCoreMqtt(mqttClient, netClient, device);
